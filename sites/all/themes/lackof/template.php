@@ -1,10 +1,8 @@
 <?php
-
 /**
  * @file
- * template.php
+ * The primary PHP file for this theme.
  */
-
 function lackof_preprocess_node(&$variables) {
 	$variables['submitted'] =  t('!username on !datetime', 
 		array(
