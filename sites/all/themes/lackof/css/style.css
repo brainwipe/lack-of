@@ -1,0 +1,378 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+
+@font-face {
+  font-family: 'Bowlby One SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bowlby One SC Regular'), local('BowlbyOneSC-Regular'), url(http://themes.googleusercontent.com/static/fonts/bowlbyonesc/v6/8ZkeXftTuzKBtmxOYXoReXSZ6Kd_eOJbDsY1hLBynIs.woff) format('woff');
+}
+
+body {
+  background-color:#e7e1d4;
+   color:#444;
+  font-family:verdana;
+}
+
+a {
+  color:#027AC6;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#005e9a;
+}
+
+h1.page-header {
+	padding-bottom:20px;
+	margin-bottom:5px;
+}
+
+h2 {
+  font-size:24px;
+}
+
+h3 {
+  font-size:18px;
+}
+
+/** Header and Navbar **/
+
+.navbar {
+	border:0;
+}
+
+.navbar .navbar-brand {
+ 	font-family: 'Bowlby One SC', cursive;
+  	font-size: 40px;
+  	text-shadow:0px 0px 5px #b5a88b;
+  	margin:0;
+  	color:#fff;
+}
+
+.navbar-toggle {
+  background-color:#fff;
+}
+
+header .container {
+	width:auto;
+	background-color:#e7e1d4;
+	border-bottom:0; /*1px solid #cfc3a9;*/
+}
+
+header.navbar-default ul.navbar-nav li a {
+  	font-family: 'Bowlby One SC', cursive;
+  	font-size: 20px;
+  	text-shadow:0px 0px 5px #fff;
+  	text-align: center;
+  	float:right;
+  	padding-left:5px;
+  	padding-right:5px;
+}
+
+header.navbar-default ul.navbar-nav .active a
+{
+	background-color:#fff;
+}
+
+/** Main content **/
+
+.main-container {
+	background-color:#fff;
+  	border:1px solid #cfc3a9;
+  	border-radius:13px;
+  	padding-bottom:15px;
+    clear:both;
+}
+
+.breadcrumb {
+	background:#f9f8f6;
+}
+
+/* Front page view changes */
+.view-id-lack_of_front .views-field-name, 
+.view-id-lack_of_front .views-field-last-updated,
+.view-id-lack_of_front .views-field-last-comment-name,
+.view-id-lack_of_front .views-field-last-comment-timestamp
+ {
+  float:left;
+  font-size:0.8em;
+  margin:0 6px 0 0;
+  color:#777;
+}
+
+.view-id-lack_of_front ul {
+	padding:0;
+	list-style: none;
+}
+
+.view-lack-of-front .views-row {
+  clear:both;
+  padding-top:5px;
+  padding-bottom:5px;
+  min-height:50px;
+  border-bottom:1px solid #ddd;
+}
+
+.view-lack-of-front .views-field-picture {
+  float:right;
+}
+
+.view-lack-of-front .views-field-picture img {
+  height:40px;
+}
+
+.view-lack-of-front .views-field-new-comments, 
+.view-lack-of-front .fp-new-item {
+  float:right;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 16px;
+    margin:0 6px 0 0;
+  color:#700;
+
+}
+
+.view-lack-of-front .views-field-new-comments a {
+  color:#700;
+}
+
+.view-lack-of-front .views-field-new-comments a:hover {
+  color:#911;
+}
+
+#block-user-login {
+  margin:38px;
+}
+
+/*IcoMoon fonts*/
+
+ 
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?-vjwzh0');
+  src:url('../fonts/icomoon.eot?#iefix-vjwzh0') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?-vjwzh0') format('woff'),
+    url('../fonts/icomoon.ttf?-vjwzh0') format('truetype'),
+    url('../fonts/icomoon.svg?-vjwzh0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* [class^="icon-"], [class*=" icon-"],  */
+[class*=" front-page-"], [class^="front-page-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  margin:4px 12px 0 0;
+  color:#aaa;
+  float:left;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pen:before, .front-page-Blog:before {
+  content: "\e600";
+}
+.icon-play:before {
+  content: "\e601";
+}
+.icon-bubbles:before, .front-page-Forum:before {
+  content: "\e602";
+}
+.icon-link:before,.front-page-Link:before {
+  content: "\e603";
+}
+.icon-home:before {
+  content: "\e604";
+}
+.icon-pushpin:before {
+  content: "\e605";
+}
+
+/* Area page changes */
+.submitted {
+	font-style: normal;
+}
+
+.user-picture {
+	float:right;
+}
+
+
+/* Page node changes */
+.page-node .tabs--primary {
+	font-size:80%;
+	border-color:transparent;
+	text-align:right;
+	float:right;
+}
+
+.page-node .tabs--primary a {
+	padding:4px;
+	color:#7ab5da;
+}
+
+.page-node .tabs--primary li.active a {
+	border-color:#eee;
+	border-bottom-color:transparent;
+	color:#aaa;
+}
+
+.page-node .user-picture img {
+	height:22px;
+}
+
+.page-node .user-picture {
+	float:left;
+}
+
+.page-node .submitted {
+	margin: 3px 0 15px 24px;
+	font-size:90%;
+	color:#999;
+}
+
+.page-node .content {
+	border-bottom:1px solid #eee;
+	padding-bottom:7px;
+	margin-bottom:7px;
+}
+
+.field-name-comment-body {
+  margin-bottom:15px;
+}
+
+.comment-form label {
+	display:none;
+}
+
+#comments > h2 {
+	display: none;
+}
+
+#comments > h2.comment-form {
+  display:block;
+  font-size: 24px;
+}
+
+#comments .links {
+  font-size:80%;
+  float:right;
+}
+
+#comments .links a {
+  color:#7ab5da;
+}
+
+#comments .submitted {
+  display:inline;
+  margin: 8px 0 7px 3px;
+}
+
+.comment-new .content {
+  border-left: 7px solid #700;
+  padding-left: 7px;
+  margin-left: -15px;
+}
+
+.comment-new .new {
+  display:none;
+}
+
+/* Links specific changes */
+
+.field-type-link-field {
+	margin-top: 15px;
+}
+
+.field-type-link-field .field-label {
+	display:none;
+
+}
+
+/* Blog specific */
+
+.node-blog .links {
+  display: none;
+}
+
+/* Forum specific changes */
+
+.field-name-taxonomy-forums {
+	display:none;
+}
+
+/* Overrides to hide defaults */
+/* Text format box "Plain txt/ Full Power (selected)" */
+.text-format-wrapper .filter-wrapper {
+	display: none;
+}
+
+/* The author of the comment (user that's logged in!) */
+#edit-author--2 {
+	display: none;
+}
+
+.form-required {
+	display:none;
+}
+
+li.comment-add {
+	display:none;
+}
+
+/* Media queries for sorting out header */
+@media (max-width: 912px) {
+ 
+  .navbar .container {
+    padding-left:7px;
+    padding-right:0;
+  }
+
+  #branddotorg {
+    display:none;
+  }
+}
+
+@media (max-width: 791px) {
+  #brandhyphen {
+    display:none;
+  }
+  .navbar-collapse {
+    padding-right:0;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar .container {
+    padding-left:15px;
+    padding-right:15px;
+  }
+
+  #brandhyphen {
+    display:inline;
+  }
+   #branddotorg {
+    display:inline;
+  }
+}
+
+@media (max-width: 380px) {
+   #branddotorg {
+    display:none;
+  }
+}
+
+@media (max-width: 280px) {
+   #brandhyphen {
+    display:none;
+  }
+}
