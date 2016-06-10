@@ -11,6 +11,7 @@
 		'echo $PWD',
 		'whoami',
 		'git checkout Release',
+		'git status',
 		'git pull',
 		'git status',
 		'git submodule sync',
