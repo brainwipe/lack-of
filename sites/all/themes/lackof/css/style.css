@@ -137,6 +137,10 @@ body footer.footer a:active {
   border-bottom:1px solid #ddd;
 }
 
+.view-lack-of-front .views-row:first-child {
+  padding-top:10px;
+}
+
 .view-lack-of-front .views-field-picture {
   float:right;
 }
