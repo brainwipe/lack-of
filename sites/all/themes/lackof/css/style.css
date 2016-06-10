@@ -27,7 +27,7 @@ a:hover {
 
 h1.page-header {
 	padding-bottom:20px;
-	margin-bottom:5px;
+  margin-bottom:0;
   border-bottom:0;
 }
 
