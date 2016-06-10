@@ -152,6 +152,10 @@ header.navbar-default ul.navbar-nav .active a
   border-bottom:1px solid #eee;
 }
 
+.region-content img {
+  max-width:100%;
+}
+
 /*IcoMoon fonts*/
  
 @font-face {
