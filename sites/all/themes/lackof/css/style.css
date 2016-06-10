@@ -28,6 +28,7 @@ a:hover {
 h1.page-header {
 	padding-bottom:20px;
 	margin-bottom:5px;
+  border-bottom:0;
 }
 
 h2 {
@@ -146,8 +147,12 @@ header.navbar-default ul.navbar-nav .active a
   margin:38px;
 }
 
-/*IcoMoon fonts*/
+.region-content header {
+  height:25px;
+  border-bottom:1px solid #eee;
+}
 
+/*IcoMoon fonts*/
  
 @font-face {
   font-family: 'icomoon';
@@ -235,9 +240,9 @@ header.navbar-default ul.navbar-nav .active a
 }
 
 .page-node .submitted {
-	margin: 3px 0 15px 24px;
-	font-size:90%;
-	color:#999;
+	margin: 3px 0 0 7px;
+	font-size:80%;
+	color:#a0a0a0;
 }
 
 .page-node .content {
@@ -246,12 +251,22 @@ header.navbar-default ul.navbar-nav .active a
 	margin-bottom:7px;
 }
 
+.field-name-body {
+  margin-top:4px;
+}
+
 .field-name-comment-body {
   margin-bottom:15px;
 }
 
 .comment-form label {
 	display:none;
+}
+
+#comments {
+  border-top:4px solid #f1f1f1;
+  padding:7px 15px 0 15px;
+  margin:7px -15px 0 -15px;
 }
 
 #comments > h2 {
@@ -286,6 +301,8 @@ header.navbar-default ul.navbar-nav .active a
 .comment-new .new {
   display:none;
 }
+
+/*  */
 
 /* Links specific changes */
 
