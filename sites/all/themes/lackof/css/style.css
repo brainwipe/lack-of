@@ -321,7 +321,7 @@ header.navbar-default ul.navbar-nav .active a
 
 /* Blog specific */
 
-.node-blog .links {
+.node-blog footer .links {
   display: none;
 }
 
