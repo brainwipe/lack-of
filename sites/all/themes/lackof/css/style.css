@@ -355,6 +355,14 @@ article.node img {
 	display:none;
 }
 
+.not-logged-in nav ul.menu li:last-child {
+  display:none;
+}
+
+.not-logged-in.page-forum .region-content {
+  display: none;
+}
+
 /* Overrides to hide defaults */
 /* Text format box "Plain txt/ Full Power (selected)" */
 .text-format-wrapper .filter-wrapper {
