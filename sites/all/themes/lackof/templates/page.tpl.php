@@ -157,5 +157,8 @@
   </div>
 </div>
 <footer class="footer container">
+  <?php if (!$logged_in) { ?>
+  <a href="user">Already a user? Click here to login</a>
+  <?php } ?>
   <?php print render($page['footer']); ?>
 </footer>
