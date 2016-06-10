@@ -171,12 +171,12 @@ body footer.footer a:active {
   margin:38px;
 }
 
-.region-content header {
-  height:25px;
+.page-node article.node header {
+  min-height:25px;
   border-bottom:1px solid #eee;
 }
 
-.region-content img {
+article.node img {
   max-width:100%;
 }
 
