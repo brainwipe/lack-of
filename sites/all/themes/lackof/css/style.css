@@ -363,6 +363,43 @@ article.node img {
   display: none;
 }
 
+.page-forum div#forum table {
+  width:100%;
+  margin-bottom:14px;
+}
+
+.page-forum div#forum table:last-child {
+  margin-bottom:0;
+}
+
+
+.page-forum div#forum thead {
+  border-bottom: 4px solid #f1f1f1;
+}
+
+.page-forum div#forum thead th {
+  padding:0 4px 2px 4px;
+}
+.page-forum div#forum thead th:last-child {
+  min-width:120px;
+}
+
+.page-forum div#forum thead .img-responsive {
+  display:none;
+}
+
+.page-forum div#forum tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.page-forum div#forum .last-reply {
+  font-size:80%;
+}
+
+.page-forum div#forum .title .submitted {
+  font-size:80%;
+}
+
 /* Overrides to hide defaults */
 /* Text format box "Plain txt/ Full Power (selected)" */
 .text-format-wrapper .filter-wrapper {
