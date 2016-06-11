@@ -392,6 +392,15 @@ article.node img {
   border-bottom: 1px solid #eee;
 }
 
+.page-forum div#forum tbody tr:last-child {
+  border-bottom:0;
+}
+
+
+.page-forum div#forum tbody td {
+  padding: 3px 0 3px 0;
+}
+
 .page-forum div#forum .last-reply {
   font-size:80%;
 }
