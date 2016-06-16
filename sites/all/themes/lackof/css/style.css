@@ -53,10 +53,6 @@ h3 {
   	color:#fff;
 }
 
-.navbar-toggle {
-  background-color:#fff;
-}
-
 header .container {
 	width:auto;
 	background-color:#e7e1d4;
@@ -76,6 +72,23 @@ header.navbar-default ul.navbar-nav li a {
 header.navbar-default ul.navbar-nav .active a
 {
 	background-color:#fff;
+}
+
+.navbar-default .navbar-toggle {
+  background-color:#fff;
+  border-color: #cfc3a9;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+ background-color: #cfc3a9; 
+}
+
+.navbar-default .navbar-toggle:hover {
+ background-color:#333;
+}
+
+.navbar-hasscrolled {
+  border-bottom: 1px solid #cfc3a9;
 }
 
 body footer.footer {
