@@ -9,4 +9,7 @@ function lackof_preprocess_node(&$variables) {
 		'!username' => $variables['name'], 
 		'!datetime' => $variables['date'],
 		));
+
+	drupal_add_js('https://use.fontawesome.com/229c0dfd7f.js', 'external');
+	drupal_add_js('sites/all/themes/lackof/js/lackof.js', array('scope' => 'header', 'group' => JS_THEME, 'requires_jquery' => true, 'weight' => 20));
 }

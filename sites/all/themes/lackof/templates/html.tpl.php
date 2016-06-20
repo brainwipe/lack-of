@@ -88,7 +88,6 @@
 <meta name="msapplication-TileColor" content="#e7e1d4">
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
-  <script src="https://use.fontawesome.com/229c0dfd7f.js"></script>
 </head>
 <body<?php print $body_attributes; ?>>
   <div id="skip-link">
