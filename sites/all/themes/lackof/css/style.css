@@ -422,7 +422,7 @@ li.comment-add {
 }
 
 /* Media queries for sorting out header */
-@media (max-width: 912px) {
+@media (max-width: 1024px) {
  
   .navbar .container {
     padding-left:7px;
@@ -434,7 +434,7 @@ li.comment-add {
   }
 }
 
-@media (max-width: 791px) {
+@media (max-width: 889px) {
   #brandhyphen {
     display:none;
   }
@@ -443,16 +443,18 @@ li.comment-add {
   }
 }
 
-@media (max-width: 767px) {
-  .navbar .container {
-    padding-left:15px;
-    padding-right:15px;
+@media (max-width: 858px) {
+  #brandack, #brandf {
+    display:none;
   }
 
   #brandhyphen {
     display:inline;
   }
-   #branddotorg {
+}
+
+@media (max-width: 767px) {
+  #brandhyphen, #branddotorg, #brandack, #brandf {
     display:inline;
   }
 }

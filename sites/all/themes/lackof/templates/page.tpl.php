@@ -84,7 +84,7 @@
 
       <?php if (!empty($site_name)): ?>
       <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-        lack<span id="brandhyphen">-</span>of<span id="branddotorg">.org</span> <!-- Lack-Of -->
+        l<span id="brandack">ack</span><span id="brandhyphen">-</span>o<span id="brandf">f</span><span id="branddotorg">.org</span> <!-- Lack-Of -->
       </a>
       <?php endif; ?>
 
