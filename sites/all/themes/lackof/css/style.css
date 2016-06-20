@@ -77,18 +77,24 @@ header.navbar-default ul.navbar-nav .active a
 .navbar-default .navbar-toggle {
   background-color:#fff;
   border-color: #cfc3a9;
+  margin-right:28px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
  background-color: #cfc3a9; 
 }
 
-.navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
  background-color:#333;
 }
 
 .navbar-hasscrolled {
   border-bottom: 1px solid #cfc3a9;
+}
+
+.navbar-default .navbar-collapse {
+  border-color:#cfc3a9;
 }
 
 body footer.footer {
@@ -140,6 +146,7 @@ body footer.footer a:active {
 .view-id-lack_of_front ul {
 	padding:0;
 	list-style: none;
+  margin-bottom: 10px;
 }
 
 .view-lack-of-front .views-row {
@@ -454,15 +461,37 @@ li.comment-add {
 }
 
 @media (max-width: 767px) {
-  #brandhyphen, #branddotorg, #brandack, #brandf {
+  #brandhyphen, #branddotorg, #brandack, #brandf,  {
     display:inline;
+  }
+  #forum .topics, #forum .posts, #forum th:nth-child(1), #forum th:nth-child(2) {
+    display:none;
   }
 }
 
 @media (max-width: 380px) {
-   #branddotorg {
+  #branddotorg , .user-picture, .views-field-last-comment-timestamp, .views-field-last-updated,
+  #forum .last-reply, #forum th:nth-child(3) {
+   
     display:none;
   }
+
+  [class*=" front-page-"], [class^="front-page-"] {
+    font-size: 1.2em;
+    margin:3px 6px 0 0;
+  }
+
+  .main-container {
+    border-radius: 0;
+    border-left:0;
+    border-right:0;
+  }
+
+
+  ul.secondary {
+      float:right;
+      margin: 0 15px 0 0;
+    }
 }
 
 @media (max-width: 280px) {
