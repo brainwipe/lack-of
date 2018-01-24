@@ -555,8 +555,10 @@ function form_get_cache($form_build_id, &$form_state) {
  * Stores a form in the cache.
  */
 function form_set_cache($form_build_id, $form, $form_state) {
-  // 6 hours cache life time for forms should be plenty.
-  $expire = 21600;
+  // The default cache_form expiration is 6 hours. On busy sites, the cache_form
+  // table can become very large. A shorter cache lifetime can help to keep the
+  // table's size under control.
+  $expire = variable_get('form_cache_expiration', 21600);
 
   // Ensure that the form build_id embedded in the form structure is the same as
   // the one passed in as a parameter. This is an additional safety measure to
@@ -1176,7 +1178,7 @@ function drupal_validate_form($form_id, &$form, &$form_state) {
   // If the session token was set by drupal_prepare_form(), ensure that it
   // matches the current user's session. This is duplicate to code in
   // form_builder() but left to protect any custom form handling code.
-  if (isset($form['#token'])) {
+  if (!empty($form['#token'])) {
     if (!drupal_valid_token($form_state['values']['form_token'], $form['#token']) || !empty($form_state['invalid_token'])) {
       _drupal_invalid_token_set_form_error();
       // Stop here and don't run any further validation handlers, because they
@@ -1837,7 +1839,7 @@ function form_builder($form_id, &$element, &$form_state) {
       // If the session token was set by drupal_prepare_form(), ensure that it
       // matches the current user's session.
       $form_state['invalid_token'] = FALSE;
-      if (isset($element['#token'])) {
+      if (!empty($element['#token'])) {
         if (empty($form_state['input']['form_token']) || !drupal_valid_token($form_state['input']['form_token'], $element['#token'])) {
           // Set an early form error to block certain input processing since that
           // opens the door for CSRF vulnerabilities.
